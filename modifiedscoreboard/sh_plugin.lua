@@ -1,4 +1,8 @@
--- put in cl_hooks.lua
+PLUGIN.name = "Modified Scoreboard"
+PLUGIN.author = "Fayz_Golden"
+PLUGIN.desc = "Modifies player listing"
+
+-------------------------------------------
 
 local gradient = surface.GetTextureID("gui/gradient")
 local surface = surface
