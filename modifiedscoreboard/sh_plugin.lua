@@ -4,6 +4,12 @@ PLUGIN.desc = "Modifies player listing"
 
 -------------------------------------------
 
+PLUGIN.name = "Modified Scoreboard"
+PLUGIN.author = "Fayz_Golden"
+PLUGIN.desc = "Modifies player listing"
+
+-------------------------------------------
+
 local gradient = surface.GetTextureID("gui/gradient")
 local surface = surface
 
@@ -149,7 +155,7 @@ local PANEL = {}
 
 
 		self.ping = vgui.Create("DLabel", self)
-		self.ping:SetPos(width - 84, 24)
+		self.ping:SetPos(width - -500, 24)
 		self.ping:SetText("000")
 		self.ping:SetTextColor(color_white)
 		self.ping:SetExpensiveShadow(1, color_black)
