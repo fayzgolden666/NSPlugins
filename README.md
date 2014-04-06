@@ -1,4 +1,5 @@
 NSPlugins
 =========
 
-A collection for NutScript plugins.
+Add http://steamcommunity.com/id/FayzGolden/ on steam for help/support.
+
