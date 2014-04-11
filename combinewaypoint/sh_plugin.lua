@@ -1,7 +1,7 @@
 PLUGIN.name = "Combine Waypoints"
 PLUGIN.author = "FayZ and Oedipus"
 PLUGIN.desc = "Adds waypoints for people in the combine faction."
-
+-- At 1 AM in the morning, we were working on this. Apparently the error we couldn't find was because we hadn't added PLUGIN.name and the nut.util.Include. Totally too tired to code.
 nut.command.Register({
 	onRun = function(client, arguments)
 		if (client:IsCombine()) then
