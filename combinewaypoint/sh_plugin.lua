@@ -1,3 +1,7 @@
+PLUGIN.name = "Combine Waypoints"
+PLUGIN.author = "FayZ and Oedipus"
+PLUGIN.desc = "Adds waypoints for people in the combine faction."
+
 nut.command.Register({
 	onRun = function(client, arguments)
 		if (client:IsCombine()) then
@@ -14,3 +18,7 @@ nut.command.Register({
 		end
 end
 }, "createwaypoint")
+
+nut.util.Include("sv_hooks.lua")
+nut.util.Include("cl_hooks.lua")
+nut.util.Include("sh_config.lua")
