@@ -1,7 +1,7 @@
 local wptexture = surface.GetTextureID("combinemarker/marker")
  
 netstream.Hook("combinemarker", function(data)
-	if client:IsCombine()) then
+	if client:IsCombine() then
 		local WaypointPos = data[1] + Vector(0,0,50)
 		local StringTable = util.JSONtoTable(data[2])
 		local WaypointPosScreen = WaypointPos:ToScreen()
