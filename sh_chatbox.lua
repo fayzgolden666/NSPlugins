@@ -1,4 +1,4 @@
-  local ICON_CITIZEN = Material("icon16/wrench_orange.png")
+  	local ICON_CITIZEN = Material("icon16/wrench_orange.png")
 	
 	local ICON_USER = Material("icon16/user.png")
 	local ICON_HEART = Material("icon16/heart.png")
