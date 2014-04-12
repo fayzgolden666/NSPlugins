@@ -10,4 +10,4 @@ Thanks to Zenolisk of CRG for helping us out when we derp.
 IF YOU'RE LOOKING TO PORT ONE OF OUR PLUGINS:
 =============================================
 
-Don't do it. The Clockwork plugin scene has plenty of able developers. We're basically the only ones making open-source plugins for NutScript besides the actual developers.
+Don't do it. The Clockwork plugin scene has plenty of able developers. We're basically the only ones making open-source plugins for NutScript besides the actual developers of the framework itself.
