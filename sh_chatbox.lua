@@ -34,7 +34,7 @@
 				override = Material(override)
 			end
 
-			chat.AddText(override or icon, Color(250, 40, 40), "[OOC] ", speaker, color_white, ": "..text)
+			chat.AddText(override or icon, factionicon, Color(250, 40, 40), "[OOC] ", speaker, color_white, ": "..text)
 		end,
 		prefix = {"//", "/ooc"},
 		deadCanTalk = true,
