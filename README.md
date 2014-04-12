@@ -11,3 +11,5 @@ IF YOU'RE LOOKING TO PORT ONE OF OUR PLUGINS:
 =============================================
 
 Don't do it. The Clockwork plugin scene has plenty of able developers. We're basically the only ones making open-source plugins for NutScript besides the actual developers of the framework itself.
+
+If we see a port of one of our plugins to Clockwork, (We will be able to tell, by the way) We will ask you to take it down. Even though you guys ignore Black Tea's porting rights, we still ask you kindly NOT to do it. We work hard on these things and are tired of Clockwork and it's biggotry. 
