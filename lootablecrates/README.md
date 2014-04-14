@@ -1,11 +1,11 @@
 Credits
 =================================
 
-Main Coding
+Main Coding:
 Oepidus Rex
 
-Testing
+Testing:
 Sants1 (Fayz_Golden)
 
-Spawning Sys.
+Spawning Sys:
 rebel1324
