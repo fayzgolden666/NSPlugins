@@ -10,8 +10,8 @@ ITEM.functions.Consume = {
 	run = function(itemTable, client, data)
 		if (SERVER) then
         
-        local restoreAmountLow = math.random(v.data.Amount, 50)
-        local restoreAmountHigh = math.random(v.data.Amount, 100)
+        local restoreAmountLow = math.random(data.Amount, 50)
+        local restoreAmountHigh = math.random(data.Amount, 100)
         
 		if (client:Health() >= 100) then
 			nut.util.Notify("You do not need to consume this right now.", client)
