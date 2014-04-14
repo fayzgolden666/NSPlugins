@@ -20,11 +20,11 @@ ITEM.functions.Consume = {
 		end
             
 		if (data.Amount < 50) then
-			client:SetHealth(math.Clamp(client:Health() + restoreAmountLow))
+			client:SetHealth(math.Clamp(client:Health() + restoreAmountLow, 0, 100))
 		end
 
 		if (data.Amount > 50) then
-			client:SetHealth(math.Clamp(client:Health() + restoreAmountHigh))
+			client:SetHealth(math.Clamp(client:Health() + restoreAmountHigh, 0, 100))
 		end
 
 			if (client:Health() <= 0) then
