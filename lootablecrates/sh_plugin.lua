@@ -17,7 +17,7 @@ PLUGIN.spawngroups = { -- Example is based on HL2RP items.
 	}
 }
 
-PLUGIN.spawnrate = 1
+PLUGIN.spawnrate = 120
 PLUGIN.maxitems = 10
 PLUGIN.itemsperspawn = 2
 PLUGIN.spawneditems = PLUGIN.spawneditems or {}
