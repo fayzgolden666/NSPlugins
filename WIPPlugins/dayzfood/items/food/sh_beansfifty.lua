@@ -5,8 +5,8 @@ ITEM.model = Model("models/props_lab/jar01b.mdl")
 ITEM.data = {
     Amount = 0
 }
-BASE.functions = {}
-BASE.functions.Consume = {
+ITEM.functions = {}
+ITEM.functions.Consume = {
 	run = function(itemTable, client, data)
 		if (SERVER) then
         
