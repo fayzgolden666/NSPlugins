@@ -13,19 +13,19 @@ BASE.functions.Consume = {
         local restoreAmountLow = math.random(v.data.Amount, 50)
         local restoreAmountHigh = math.random(v.data.Amount, 100)
         
-			if (client:Health() >= 100) then
-				nut.util.Notify("You do not need to consume this right now.", client)
+		if (client:Health() >= 100) then
+			nut.util.Notify("You do not need to consume this right now.", client)
 
-				return false
-			end
+			return false
+		end
             
-            if (v.data.Amount < 50) then
-			    client:SetHealth(math.Clamp(client:Health() + restoreAmountLow))
-			end
+		if (v.data.Amount < 50) then
+			client:SetHealth(math.Clamp(client:Health() + restoreAmountLow))
+		end
 
-            if (v.data.Amount > 50) then
-                client:SetHealth(math.Clamp(client:Health() + restoreAmountHigh))
-            end
+		if (v.data.Amount > 50) then
+			client:SetHealth(math.Clamp(client:Health() + restoreAmountHigh))
+		end
 
 			if (client:Health() <= 0) then
 				client:Kill()
