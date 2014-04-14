@@ -4,7 +4,7 @@ Credits
 Main Coding:
 Oepidus Rex
 
-Testing:
+Testing and bug fixing:
 Sants1 (Fayz_Golden)
 
 Spawning Sys:
