@@ -19,11 +19,11 @@ ITEM.functions.Open = {
             elseif client:HasItem("dayz_wrench") then
                         client:UpdateInv("beans_food", 1, {Amount = math.random(20,30)})
                         client:EmitSound("physics/flesh/flesh_impact_hard"..math.random(1, 5)..".wav")
-                        nut.util.Notify("You have opened the can of beans! Some have spilled out.", client)
+                        nut.util.Notify("You don't have the required tools to open this can!", client)
                                                        
                     else
                                        
-                        nut.util.Notify("You have nothing to open this can!", client)
+                        nut.util.Notify("You don't have the required tools to open this can!", client)
         end
     end
 }
