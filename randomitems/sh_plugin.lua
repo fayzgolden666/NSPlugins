@@ -1,6 +1,6 @@
 PLUGIN.name = "Random Item"
 PLUGIN.desc = "On the creation of a character, they get random items."
-PLUGIN.Author = "Oedipus Rex"
+PLUGIN.Author = "Oedipus Rex and Sants1"
 
 function PLUGIN:GetDefaultInv(inventory, client, data)
 		if (data.faction == FACTION_CITIZEN) then
