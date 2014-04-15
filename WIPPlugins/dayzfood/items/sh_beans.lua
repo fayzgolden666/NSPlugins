@@ -15,15 +15,21 @@ ITEM.functions.Open = {
             if client:HasItem("kitchen_knife") then
                         client:UpdateInv("beans_food", 1, {Amount = math.random(40,50)})
                         client:EmitSound("physics/flesh/flesh_impact_hard"..math.random(1, 5)..".wav")
-                        nut.util.Notify("You have opened the can of beans! Some have spilled out.", client)                                            
+                        nut.util.Notify("You have opened the can of beans! Some have spilled out.", client) 
+                        
+                        
             elseif client:HasItem("dayz_wrench") then
                         client:UpdateInv("beans_food", 1, {Amount = math.random(20,30)})
                         client:EmitSound("physics/flesh/flesh_impact_hard"..math.random(1, 5)..".wav")
-                        nut.util.Notify("You don't have the required tools to open this can!", client)
-                                                       
-                    else
-                                       
-                        nut.util.Notify("You don't have the required tools to open this can!", client)
-        end
+                        nut.util.Notify("You have opened the can of beans! Some have spilled out.", client)
+
+
+            elseif client:HasItem("dayz_stone") then
+                        client:UpdateInv("beans_food", 1, {Amount = math.random(10,20)})
+                        client:EmitSound("physics/flesh/flesh_impact_hard"..math.random(1, 5)..".wav")
+                        nut.util.Notify("You have opened the can of beans! A lot has spilled out.", client)                              
+                    else 
+                         nut.util.Notify("You don't have the required tools to open this can!", client)           
+        end           
     end
 }
