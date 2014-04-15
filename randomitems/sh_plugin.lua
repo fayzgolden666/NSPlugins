@@ -11,7 +11,7 @@ function PLUGIN:GetDefaultInv(inventory, client, data)
 			pistols = {"weapon_smg1", "weapon_shotgun", "weapon_pistol", "weapon_357"}
 			ammoitems = {"weapon_frag", "bleach", "water", "water"}
 			rarerifles = {"bleach", "water", "weapon_ar2"}
-			itssoflattering = {"bleach", "bleach", "bleach", "bleach", "bleach",}
+			itssoflattering = {"bleach", "bleach", "bleach", "bleach", "bleach"}
 
 			local addictionlikesAnal = table.Random(pistols)
 			local nicecopypastehaloKiller = table.Random(ammoitems)
