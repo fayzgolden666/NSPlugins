@@ -12,7 +12,13 @@ ITEM.functions.Open = {
         run = function(itemTable, client, data)
             if (CLIENT) then return end
             
-            if (!client:HasItem("kitchen_knife", "dayz_wrench", "dayz_stone")) then
+            if (!client:HasItem("kitchen_knife")) then
+                nut.util.Notify("You don't have the tools to open the can!", client)
+                    return false
+            elseif (!client:HasItem("kitchen_knife")) then
+                nut.util.Notify("You don't have the tools to open the can!", client)
+                    return false
+            elseif (!client:HasItem("kitchen_knife")) then
                 nut.util.Notify("You don't have the tools to open the can!", client)
                     return false
             end
