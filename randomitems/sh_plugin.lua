@@ -1,5 +1,8 @@
+PLUGIN.name = "RandomItem"
+PLUGIN.desc = "On the creation of a character, they get random items."
+PLUGIN.Author = "Oedipus Rex"
+
 function PLUGIN:GetDefaultInv(inventory, client, data)
-	if (SERVER) then
 		if (data.faction == FACTION_CITIZEN) then
 			
 			pistols = {"weapon_smg1", "weapon_shotgun", "weapon_pistol", "weapon_357"} -- Edit this shit to your liking. These tables are meant for you to edit.
