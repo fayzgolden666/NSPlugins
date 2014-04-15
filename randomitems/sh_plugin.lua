@@ -12,19 +12,15 @@ function PLUGIN:GetDefaultInv(inventory, client, data)
 			local ateelovesDusty = math.random(1, 100) -- Just the chance modifier thing, leave this alone
 			local kipperisaFaggot = table.Random(rarerifles)
 			local thanksforcopypastingmycodehaloKiller = table.Random(itssoflattering)
-			local hollahollagetdolla = math.random(200, 300) -- Money if number selected is over or equal to sixty
-			local yourepournigger = math.random(100, 150) -- This is the money for if the number selected is lower than sixty
 			
 -- please don't edit after this line my loves unless you want to get rekt (talking to you addiction) (you too halokiller) (you are buttbuddies and i know it)
 			
 			if (ateelovesDusty <= 60) then
-				client:UpdateInv(addictionlikesAnal)
-				client:UpdateInv(nicecopypastehaloKiller)
-				client:GiveMoney(hollahollagetdolla)
+				inventory:Add(addictionlikesAnal, 1)
+				inventory:Add(nicecopypastehaloKiller, 1)
 			elseif (ateelovesDusty > 60) then
-				client:UpdateInv(kipperisaFaggot)
-				client:UpdateInv(thanksforcopypastingmycodehaloKiller)
-				client:GiveMoney(yourepournigger)
+				inventory:Add(kipperisaFaggot, 1)
+				inventory:Add(thanksforcopypastingmycodehaloKiller, 1)
 			end
 		end
 	end
