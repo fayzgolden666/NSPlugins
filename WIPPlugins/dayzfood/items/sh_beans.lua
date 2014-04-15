@@ -12,17 +12,7 @@ ITEM.functions.Open = {
         run = function(itemTable, client, data)
             if (CLIENT) then return end
             
-            if !client:HasItem("kitchen_knife") then
-                nut.util.Notify("You don't have the tools to open the can!", client)
-                    return false
-            end
-            
-            if !client:HasItem("dayz_wrench") then
-                nut.util.Notify("You don't have the tools to open the can!", client)
-                    return false
-            end
-            
-            if !client:HasItem("dayz_stone") then
+            if (!client:HasItem("kitchen_knife", "dayz_wrench", "dayz_stone")) then
                 nut.util.Notify("You don't have the tools to open the can!", client)
                     return false
             end
@@ -31,14 +21,10 @@ ITEM.functions.Open = {
                         client:UpdateInv("beans_food", 1, {Amount = math.random(40,50)})
                         client:EmitSound("physics/flesh/flesh_impact_hard"..math.random(1, 5)..".wav")
                         nut.util.Notify("You have opened the can of beans! Some have spilled out.", client) 
-                        
-                        
             elseif client:HasItem("dayz_wrench") then
                         client:UpdateInv("beans_food", 1, {Amount = math.random(20,30)})
                         client:EmitSound("physics/flesh/flesh_impact_hard"..math.random(1, 5)..".wav")
                         nut.util.Notify("You have opened the can of beans! Some have spilled out.", client)
-
-
             elseif client:HasItem("dayz_stone") then
                         client:UpdateInv("beans_food", 1, {Amount = math.random(10,20)})
                         client:EmitSound("physics/flesh/flesh_impact_hard"..math.random(1, 5)..".wav")
