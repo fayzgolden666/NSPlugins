@@ -14,7 +14,9 @@ ITEM.functions.Open = {
                 
             if (!itemTable) then return false end
 
-            if !client:HasItem("kitchen_knife") then
+            canopenerItems = {"dayz_wrench", "dayz_stone", "kitchen_knife"}
+
+            if !client:HasItem(canopenerItems) then
                 nut.util.Notify("You don't have the tools to open the can!", client)
                     return false
             end
