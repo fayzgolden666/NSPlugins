@@ -11,7 +11,9 @@ ITEM.functions.Open = {
             icon = "icon16/error.png",
         run = function(itemTable, client, data)
             if (SERVER) then
-            
+                
+            if (!itemTable) then return false end
+
             if !client:HasItem("kitchen_knife") then
                 nut.util.Notify("You don't have the tools to open the can!", client)
                     return false
