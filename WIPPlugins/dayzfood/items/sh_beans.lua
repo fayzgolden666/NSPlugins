@@ -14,13 +14,10 @@ ITEM.functions.Open = {
             
             if (!client:HasItem("kitchen_knife")) then
                 nut.util.Notify("You don't have the tools to open the can!", client)
-                    return false
             elseif (!client:HasItem("kitchen_knife")) then
                 nut.util.Notify("You don't have the tools to open the can!", client)
-                    return false
             elseif (!client:HasItem("kitchen_knife")) then
                 nut.util.Notify("You don't have the tools to open the can!", client)
-                    return false
             end
             
             if client:HasItem("kitchen_knife") then
