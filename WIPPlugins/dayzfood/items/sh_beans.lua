@@ -14,10 +14,8 @@ ITEM.functions.Open = {
             
             if (!client:HasItem("kitchen_knife")) then
                 nut.util.Notify("You don't have the tools to open the can!", client)
-            elseif (!client:HasItem("dayz_wrench")) then
-                nut.util.Notify("You don't have the tools to open the can!", client)
-            elseif (!client:HasItem("dayz_stone")) then
-                nut.util.Notify("You don't have the tools to open the can!", client)
+                    return false
+                end
             end
             
             if client:HasItem("kitchen_knife") then
