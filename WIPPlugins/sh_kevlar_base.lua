@@ -132,7 +132,7 @@ if (SERVER) then
 			end
 		end)
 	end)
-	hook.Add("PlayerSpawn", "nut_PartBase", function(client)
+	hook.Add("PlayerDeath", "nut_PartDeath", function(client)
 		timer.Simple(0.1, function()
 			if (!IsValid(client) or !client.character) then
 				return
