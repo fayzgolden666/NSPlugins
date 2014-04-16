@@ -29,7 +29,7 @@ BASE.functions.Equip = {
 			end
 			
 			if itemTable.type then
-				client:SetNutVar(itemTable.type, itemTable.unequID)
+				client:SetNutVar(itemTable.type, itemTable.uniqueID)
 			end
 			
 			client:AddPartModel(itemTable.uniqueID, itemTable.partdata)
