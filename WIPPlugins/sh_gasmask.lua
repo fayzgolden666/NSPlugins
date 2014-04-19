@@ -12,16 +12,16 @@ ITEM.model = Model("models/half-dead/metroll/p_mask_2.mdl")
 ITEM.weight = 1
 ITEM.desc = "A Mask that protects you from the bad air area."
 ITEM.price = 200
-       
-
-if client:Health() >= 20) then
-                        surface.SetMaterial("effects/gasmask_screen_4.vmt")
-                elseif client:Health() >= 30) then
-                        surface.SetMaterial( "effects/gasmask_screen_3.vmt")
-                elseif client:Health() >= 60) then
-                        surface.SetMaterial( "effects/gasmask_screen_2.vmt")
-                elseif client:Health() >= 90) then
-                        surface.SetMaterial( "effects/gasmask_screen_1.vmt")
-                else
-                        surface.SetMaterial( "effects/gasmask_screen.vmt")
-	end
+ITEM.functions = {}
+ITEM.functions.OnEquip = {
+	if (client:Health() >= 20) then
+		surface.SetMaterial("effects/gasmask_screen_4.vmt")
+	elseif (client:Health >= 30) then
+		surface.SetMaterial("effects/gasmask_screen_3.vmt")
+	elseif (client:Health >= 60) then
+		surface.SetMaterial("effects/gasmask_screen_2.vmt")
+	elseif (client:Health >= 90) then
+		surface.SetMaterial( "effects/gasmask_screen_1.vmt")
+	else
+		surface.SetMaterial( "effects/gasmask_screen.vmt")
+end
