@@ -17,11 +17,11 @@ ITEM.functions.Equip = {
 	onRun = function()
 		if (client:Health() >= 20) then
 			surface.SetMaterial("effects/gasmask_screen_4.vmt")
-		elseif (client:Health >= 30) then
+		elseif (client:Health() >= 30) then
 			surface.SetMaterial("effects/gasmask_screen_3.vmt")
-		elseif (client:Health >= 60) then
+		elseif (client:Health() >= 60) then
 			surface.SetMaterial("effects/gasmask_screen_2.vmt")
-		elseif (client:Health >= 90) then
+		elseif (client:Health() >= 90) then
 			surface.SetMaterial( "effects/gasmask_screen_1.vmt")
 		else
 			surface.SetMaterial( "effects/gasmask_screen.vmt")
