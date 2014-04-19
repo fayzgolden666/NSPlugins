@@ -13,7 +13,8 @@ ITEM.weight = 1
 ITEM.desc = "A Mask that protects you from the bad air area."
 ITEM.price = 200
 ITEM.functions = {}
-ITEM.functions.OnEquip = {
+ITEM.functions.Equip = {
+	onRun = function(client)
 	if (client:Health() >= 20) then
 		surface.SetMaterial("effects/gasmask_screen_4.vmt")
 	elseif (client:Health >= 30) then
