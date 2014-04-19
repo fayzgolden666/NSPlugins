@@ -1,4 +1,5 @@
 ITEM.name = "Gas Mask"
+ITEM.base = "base_part"
 ITEM.partdata = { -- You can use PAC3 to setup the part.
         model = "models/half-dead/metroll/p_mask_2.mdl",
         bone = "ValveBiped.Bip01_Head1",
