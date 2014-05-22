@@ -14,25 +14,15 @@ ITEM.functions.Open = {
                 
             if (!itemTable) then return false end
 
-            canopenerItems = {"dayz_wrench", "dayz_stone", "kitchen_knife"}
-
-            if !client:HasItem(canopenerItems) then
+            if !client:HasItem("kitchen_knife") or !client:HasItem("dayz_wrench") or !client:HasItem("dayz_stone") then
                 nut.util.Notify("You don't have the tools to open the can!", client)
                     return false
             end
             
-            if client:HasItem("kitchen_knife") then
-                        client:UpdateInv("beans_food", 1, {Amount = math.random(40,50)})
+            if client:HasItem("kitchen_knife") or client:HasItem("dayz_wrench") or client:HasItem("dayz_stone") then
+                        client:UpdateInv("beans_food", 1, {Amount = math.random(40,100)})
                         client:EmitSound("physics/flesh/flesh_impact_hard"..math.random(1, 5)..".wav")
-                        nut.util.Notify("You have opened the can of beans! Some have spilled out.", client) 
-            elseif client:HasItem("dayz_wrench") then
-                        client:UpdateInv("beans_food", 1, {Amount = math.random(20,30)})
-                        client:EmitSound("physics/flesh/flesh_impact_hard"..math.random(1, 5)..".wav")
-                        nut.util.Notify("You have opened the can of beans! Some have spilled out.", client)
-            elseif client:HasItem("dayz_stone") then
-                        client:UpdateInv("beans_food", 1, {Amount = math.random(10,20)})
-                        client:EmitSound("physics/flesh/flesh_impact_hard"..math.random(1, 5)..".wav")
-                        nut.util.Notify("You have opened the can of beans! A lot has spilled out.", client)                              
+                        nut.util.Notify("You have opened the can of beans! Some has spilled out.", client) 
         end           
     end
 }
